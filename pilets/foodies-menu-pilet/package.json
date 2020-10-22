@@ -1,0 +1,66 @@
+{
+  "name": "foodies-menu-pilet",
+  "version": "1.0.8",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@dbeining/react-atom": "4.1.10",
+    "@libre/atom": "1.3.3",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router": "latest",
+    "@types/react-router-dom": "latest",
+    "foodies-piral": "file:..\\foodies-piral\\dist\\emulator\\foodies-1.0.4.tgz",
+    "history": "4.10.1",
+    "path-to-regexp": "1.8.0",
+    "piral-cli": "^0.12.2",
+    "piral-cli-webpack": "^0.12.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "tslib": "1.13.0",
+    "typescript": "latest",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-icofont": "0.0.6",
+    "react-owl-carousel3": "^2.2.5",
+    "react-select2-wrapper": "^1.0.4-beta6",
+    "reactstrap": "8.6.0"
+  },
+  "peerDependencies": {
+    "@dbeining/react-atom": "*",
+    "@libre/atom": "*",
+    "history": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router": "*",
+    "react-router-dom": "*",
+    "tslib": "*",
+    "path-to-regexp": "*",
+    "foodies-piral": "*",
+    "reactstrap": "*"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade",
+    "upgrade-pilet": "pilet upgrade --force-overwrite yes"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "piral": {
+    "comment": "Keep this section to use the Piral CLI.",
+    "name": "foodies-piral"
+  }
+}
