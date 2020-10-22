@@ -7,7 +7,7 @@ import CheckoutItem from './common/CheckoutItem';
 import AddAddressModal from './modals/AddAddressModal';
 import Icofont from 'react-icofont';
 import PropTypes from 'prop-types'; 
-import {setGrandTotal} from '../index';
+import {setCheckoutItems} from '../index';
 
 const roundAccurately = (number, decimalPlaces) => Number(Math.round(number + "e" + decimalPlaces) + "e-" + decimalPlaces);
 let checkoutitems = [];
@@ -16,10 +16,12 @@ export function addCheckOutItems(checkoutitem,isRemove) {
 	console.log('Dynamic Checkout page');
 	console.log('pre Dynamic Checkout page array: '+JSON.stringify(checkoutitems));
 	isAdd = isRemove;
+	console.log('pre Dynamic Checkout page isRemove: '+JSON.stringify(isRemove));
 	if(isRemove !== null) {
 		var removeIndex = checkoutitems.map(function(item) { return item.id; }).indexOf(checkoutitem.id);
 		checkoutitems.splice(removeIndex, 1);
 	}
+	console.log('post Dynamic Checkout page checkoutitem: '+JSON.stringify(checkoutitem));
 	checkoutitems.push(checkoutitem);
 	console.log('post Dynamic Checkout page array: '+JSON.stringify(checkoutitems));
   }
@@ -51,6 +53,7 @@ class Checkout extends React.Component {
 		} else if (isAdd !== null && !isAdd) {
 			this.state.ctotal = checkoutitems[checkoutitems.length-1].total - checkoutitems[checkoutitems.length-1].price;
 		}
+		checkoutitems[checkoutitems.length-1].total = this.state.ctotal;
 		console.log("ctotal: "+this.state.ctotal);
 		this.state.discount = (this.state.ctotal * 10)/100;
 		console.log(this.state.discount);
@@ -60,7 +63,7 @@ class Checkout extends React.Component {
 		this.state.grandTotal = roundAccurately((this.state.ctotal + 62.8 + 10 - (this.state.ctotal * 0.10)),1);
 		console.log('Checkout grandTotal: '+this.state.grandTotal);
 		this.setState({ ctotal: this.state.ctotal, discount: (this.state.discount),grandTotal: this.state.grandTotal});
-		setGrandTotal(this.state.grandTotal);
+		setCheckoutItems(checkoutitems);
 
 	}
 
@@ -326,7 +329,7 @@ class Checkout extends React.Component {
 							price={314}
 							priceUnit="$"
 							id={1}
-							qty={2}
+							quantity={2}
 							show={true}
 							minValue={0}
 							maxValue={7}
@@ -338,7 +341,7 @@ class Checkout extends React.Component {
 							price={260}
 							priceUnit="$"
 							id={2}
-							qty={1}
+							quantity={1}
 							show={true}
 							minValue={0}
 							maxValue={7}
@@ -350,7 +353,7 @@ class Checkout extends React.Component {
 							price={122}
 							priceUnit="$"
 							id={3}
-							qty={1}
+							quantity={1}
 							show={true}
 							minValue={0}
 							maxValue={7}
@@ -362,7 +365,7 @@ class Checkout extends React.Component {
 							price={652}
 							priceUnit="$"
 							id={4}
-							qty={1}
+							quantity={1}
 							show={true}
 							minValue={0}
 							maxValue={7}

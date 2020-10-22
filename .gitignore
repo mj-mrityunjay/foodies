@@ -1,0 +1,9 @@
+/node_modules
+/dist
+/.cache
+/pilets/**/node_modules/
+/pilets/**/dist/
+/pilets/**/.cache/
+/pilets/foodies-checkout-pilet/foodies-checkout-pilet-1.0.5.tgz
+/pilets/foodies-checkout-pilet/foodies-checkout-pilet-1.0.6.tgz
+/pilets/foodies-dynamic-checkout-pilet/foodies-dynamic-checkout-pilet-1.0.12.tgz

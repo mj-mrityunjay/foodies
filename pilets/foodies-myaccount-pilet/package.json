@@ -7,7 +7,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "foodies": "file:..\\foodies-piral\\dist\\emulator\\foodies-1.0.4.tgz",
+    "foodies": "file:..\\..\\dist\\emulator\\foodies-1.0.4.tgz",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-router": "latest",

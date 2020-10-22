@@ -4,6 +4,32 @@ import {Button} from 'react-bootstrap';
 import Icofont from 'react-icofont';
 import {addCheckOutItems} from '../Checkout';
 
+export function copyToCustomCheckOutItem(checkoutitem,quantity,total) {
+  let customcheckoutitem = {
+    itemName: '',
+        price: 0,
+        priceUnit: '$',
+        id: null,
+        quantity: 1,
+        show: true,
+        max: 5,
+        min: 0,
+        total: 0,
+    };
+  
+  customcheckoutitem.itemName = checkoutitem.itemName;
+  customcheckoutitem.id = checkoutitem.id;
+	customcheckoutitem.price = checkoutitem.price;
+	customcheckoutitem.priceUnit = checkoutitem.priceUnit;
+	customcheckoutitem.quantity = quantity|| checkoutitem.quantity;
+	customcheckoutitem.show = checkoutitem.show;
+	customcheckoutitem.max = checkoutitem.max;
+	customcheckoutitem.min = checkoutitem.min;
+  customcheckoutitem.total = total || checkoutitem.total;
+
+  return customcheckoutitem;
+}
+  
 
 class CheckoutItem extends Component {
  constructor(props) {
@@ -13,14 +39,14 @@ class CheckoutItem extends Component {
       price: this.props.price || 0,
       priceUnit: this.props.priceUnit || '$',
       id: this.props.id || null,
-      quantity: this.props.qty || 1,
+      quantity: this.props.quantity || 1,
       show: this.props.show || true,
       max:this.props.maxValue || 5,
       min:this.props.minValue || 0,
       total: this.props.total || 0,
     };
     console.log(this.props);
-    addCheckOutItems(this.props,null);
+    addCheckOutItems(copyToCustomCheckOutItem(this.props),null);
     //console.log(JSON.stringify(checoutitems));
   }
 
@@ -34,8 +60,9 @@ class CheckoutItem extends Component {
         this.setState({
             quantity: this.state.quantity + 1, total: this.state.total
         });
-      addCheckOutItems(this.props,true);
-    	this.props.getValue({id:this.props.id,quantity: (this.state.quantity + 1 ),itemName:this.props.itemName,price: this.props.price,priceUnit: this.props.priceUnit,total: (this.state.total)});
+      addCheckOutItems(copyToCustomCheckOutItem(this.props,this.state.quantity + 1),true);
+      this.props.getValue({id:this.props.id,quantity: (this.state.quantity + 1 ),itemName:this.props.itemName,price: this.props.price,priceUnit: this.props.priceUnit,total: (this.state.total)});
+      console.log('this.state.quantity: '+JSON.stringify(this.state.quantity+1));
     }
     console.log('i: '+JSON.stringify(this.props));
   }
@@ -46,7 +73,7 @@ class CheckoutItem extends Component {
 
     }else {
         this.setState({ quantity: this.state.quantity - 1, total: this.state.total});
-      addCheckOutItems(this.props,false);
+        addCheckOutItems(copyToCustomCheckOutItem(this.props,this.state.quantity - 1),false);
     	this.props.getValue({id:this.props.id,quantity: (this.state.quantity - 1 ),itemName:this.props.itemName,price: this.props.price,priceUnit: this.props.priceUnit,total: (this.state.total) });
     }
     console.log('d: '+JSON.stringify(this.props));
@@ -85,7 +112,7 @@ CheckoutItem.propTypes = {
   price: PropTypes.number.isRequired,
   priceUnit: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
-  qty: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
   show: PropTypes.bool.isRequired,
   minValue: PropTypes.number,
   maxValue: PropTypes.number,

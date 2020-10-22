@@ -13,17 +13,17 @@
     "spa"
   ],
   "author": "mrityunjayk",
-  "homepage": "https://piral.io",
+  "homepage": "https://github.com/mrityunjayk",
   "license": "MIT",
   "main": "lib/index.js",
   "app": "src/index.html",
   "files": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrityunjayk/piral.git"
+    "url": "git+https://github.com/mrityunjayk/foodies.git"
   },
   "bugs": {
-    "url": "https://github.com/mrityunjayk/piral/issues"
+    "url": "https://github.com/mrityunjayk/foodies/issues"
   },
   "dependencies": {
     "axios": "^0.20.0",
