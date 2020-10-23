@@ -1,6 +1,6 @@
 {
   "name": "foodies-checkout-pilet",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "",
   "keywords": [
     "pilet"
@@ -36,7 +36,7 @@
     "react-owl-carousel3": "^2.2.5",
     "react-select2-wrapper": "^1.0.4-beta6"
   },
- "peerDependencies": {
+  "peerDependencies": {
     "reactstrap": "*",
     "@dbeining/react-atom": "*",
     "@libre/atom": "*",

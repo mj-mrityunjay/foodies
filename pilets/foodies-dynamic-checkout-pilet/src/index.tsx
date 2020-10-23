@@ -5,9 +5,9 @@ import Checkout from './components/Checkout';
 import { settings } from 'cluster';
 
 let api: PiletApi = undefined;
-export function setCheckoutItems(checkoutitem) {
+export function setDataItems(dataItemKey, checkoutitem) {
   console.log('Dynamic Checkout page');
-  api.setData('checkoutitem',checkoutitem);
+  api.setData(dataItemKey,checkoutitem);
   console.log('Dynamic Checkout page checkoutitems: '+JSON.stringify(checkoutitem));
 }
 

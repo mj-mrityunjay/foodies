@@ -5,22 +5,68 @@ import DropDownTitle from '../common/DropDownTitle';
 import CartDropdownHeader from '../cart/CartDropdownHeader';
 import CartDropdownItem from '../cart/CartDropdownItem';
 import Icofont from 'react-icofont';
+import {getDataItem} from '../../index';
+
+let customCartDropDownItems = [];
+let cartCount = 0;
+let subtotal = 0;
+let checkoutitemTemp = [{"itemName":"Chicken Tikka Sub","price":314,"priceUnit":"$","id":1,"quantity":5,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Cheese corn Roll","price":260,"priceUnit":"$","id":2,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Mixed Veg","price":122,"priceUnit":"$","id":3,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Black Dal Makhani","price":652,"priceUnit":"$","id":4,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662}];
+export function getCustomCartDropDownItem() {
+	customCartDropDownItems = [];
+	cartCount = 0;
+	subtotal = 0;
+	let customCartDataItems = getDataItem('checkoutitem');
+	if(customCartDataItems === null || customCartDataItems === undefined) {
+		customCartDataItems = checkoutitemTemp;
+	}
+	
+	for (var i = 0; i < customCartDataItems.length; i++) {
+		if(customCartDataItems[i].itemName.includes('Chicken')) {
+			customCartDropDownItems.push(
+				<CartDropdownItem 
+										 icoIcon="ui-press"
+										 iconClass="text-danger food-item"
+										 title={""+customCartDataItems[i].itemName+" x "+customCartDataItems[i].quantity}
+										 price={""+customCartDataItems[i].priceUnit+(customCartDataItems[i].price * customCartDataItems[i].quantity)}
+									 />);
+		} else {
+			customCartDropDownItems.push(
+				<CartDropdownItem 
+										 icoIcon="ui-press"
+										 iconClass="text-success food-item"
+										 title={""+customCartDataItems[i].itemName+" x "+customCartDataItems[i].quantity}
+										 price={""+customCartDataItems[i].priceUnit+(customCartDataItems[i].price * customCartDataItems[i].quantity)}
+									 />);
+		}
+		subtotal = subtotal + (customCartDataItems[i].price * customCartDataItems[i].quantity);
+			//<div key={stationData[i].call} className="station">
+			//	Call: {stationData[i].call}, Freq: {stationData[i].frequency}
+			//</div>
+		
+		cartCount = cartCount + customCartDataItems[i].quantity;
+	}
+	//console.log("Header Page, dynamic cart items: "+customCartDropDownItems);
+	console.log("Header Page, dynamic cart items: "+JSON.stringify(customCartDropDownItems));
+}
+
 
 class Header extends React.Component {
 	constructor(props) {
 	    super(props);
 	    this.state = {
 	      isNavExpanded: false
-	    };
+		};
+		getCustomCartDropDownItem();
 	}
     setIsNavExpanded = (isNavExpanded) => {
-      this.setState({ isNavExpanded: isNavExpanded });
+	  this.setState({ isNavExpanded: isNavExpanded });
     }
     closeMenu = () => {
       this.setState({ isNavExpanded: false });
     }
 
     handleClick = (e) => {
+		getCustomCartDropDownItem();
       if (this.node.contains(e.target)) {
         // if clicked inside menu do something
       } else {
@@ -93,7 +139,7 @@ class Header extends React.Component {
 			            			title='Cart'
 			            			badgeClass='ml-1'
 			            			badgeVariant='success'
-			            			badgeValue={5}
+			            			badgeValue={cartCount}
 			            		/>
 			            	}
 			            >
@@ -102,8 +148,8 @@ class Header extends React.Component {
 			               	  {
 			               	  	<CartDropdownHeader 
 			               	  		className="dropdown-cart-top-header p-4" 
-			               	  		title="Gus's World Famous Chicken"
-			               	  		subTitle="310 S Front St, Memphis, USA"
+			               	  		title="Spice Hut Indian Restaurant"
+			               	  		subTitle="2036 2ND AVE, NEW YORK, NY 10029"
 			               	  		image="https://tireades.sirv.com/img/cart.jpg"
 			               	  		imageClass="img-fluid mr-3"
 			               	  		imageAlt="osahan"
@@ -112,40 +158,14 @@ class Header extends React.Component {
 			               	    />
 			               	  } 
 			                  <div className="dropdown-cart-top-body border-top p-4">
-			                     <CartDropdownItem 
-			                     	icoIcon='ui-press'
-			                     	iconClass='text-success food-item'
-			                     	title='Corn & Peas Salad x 1'
-			                     	price='$209'
-			                     />
-
-			                     <CartDropdownItem 
-			                     	icoIcon='ui-press'
-			                     	iconClass='text-success food-item'
-			                     	title='Veg Seekh Sub 6" (15 cm) x 1'
-			                     	price='$133'
-			                     />
-
-			                     <CartDropdownItem 
-			                     	icoIcon='ui-press'
-			                     	iconClass='text-danger food-item'
-			                     	title='Chicken Tikka Sub 12" (30 cm) x 1'
-			                     	price='$314'
-			                     />
-
-			                     <CartDropdownItem 
-			                     	icoIcon='ui-press'
-			                     	iconClass='text-success food-item'
-			                     	title='Corn & Peas Salad x 1 '
-			                     	price='$209'
-			                     />
+								  {customCartDropDownItems}
 			                  </div>
 			                  <div className="dropdown-cart-top-footer border-top p-4">
-			                     <p className="mb-0 font-weight-bold text-secondary">Sub Total <span className="float-right text-dark">$499</span></p>
+							<p className="mb-0 font-weight-bold text-secondary">Sub Total <span className="float-right text-dark">${subtotal}</span></p>
 			                     <small className="text-info">Extra charges may apply</small>  
 			                  </div>
 			                  <div className="dropdown-cart-top-footer border-top p-2">
-			                     <NavDropdown.Item eventKey={5.1} as={Link} className="btn btn-success btn-block py-3 text-white text-center dropdown-item" to="/checkout"> Checkout</NavDropdown.Item>
+			                     <NavDropdown.Item eventKey={5.1} as={Link} className="btn btn-success btn-block py-3 text-white text-center dropdown-item" to="/dynamiccheckout"> Checkout</NavDropdown.Item>
 			                  </div>
 			                </div>
 			            </NavDropdown>
