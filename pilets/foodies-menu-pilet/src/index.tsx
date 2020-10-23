@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import Index from './components/Index';
-import Offers from './components/Offers';
+
 
 //let checkoutitemTemp = [{"itemName":"Chicken Tikka Sub","price":314,"priceUnit":"$","id":1,"qty":2,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Cheese corn Roll","price":260,"priceUnit":"$","id":2,"qty":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Mixed Veg","price":122,"priceUnit":"$","id":3,"qty":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Black Dal Makhani","price":652,"priceUnit":"$","id":4,"qty":1,"show":true,"minValue":0,"maxValue":7,"total":1662}];
 
