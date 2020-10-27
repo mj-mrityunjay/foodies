@@ -1,9 +1,7 @@
 import * as React from 'react';
-import { PiletApi } from 'foodies-piral';
+import { PiletApi } from 'foodies';
 import { Link } from "react-router-dom";
 import MyAccountOffers from './components/myaccount/offers';
-import App from './App';
-import { settings } from 'cluster';
 
 
 

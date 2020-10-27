@@ -57,7 +57,7 @@ class Index extends React.Component {
 			         <Container>
 			         	<SectionHeading 
 			         		heading='Popular Brands'
-			         		subHeading='Top restaurants, cafes, pubs, and bars in Ludhiana, based on trends'
+			         		subHeading='Top restaurants, cafes, pubs, and bars in Chennai, based on trends'
 			         	/>
 			            <Row>
 			               <Col md={12}>

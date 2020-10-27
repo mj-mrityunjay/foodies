@@ -68,7 +68,7 @@ class Detail extends React.Component {
 	                     <div className="restaurant-detailed-header-left">
 	                        <Image fluid className="mr-3 float-left" alt="osahan" src="https://tireades.sirv.com/img/1.jpg" />
 	                        <h2 className="text-white">Spice Hut Indian Restaurant</h2>
-	                        <p className="text-white mb-1"><Icofont icon="location-pin" /> 2036 2ND AVE, NEW YORK, NY 10029 <Badge  variant="success">OPEN</Badge>
+	                        <p className="text-white mb-1"><Icofont icon="location-pin" />5/15, Block-20, Anna Nagar, Chennai, Tamil Nadu, 600004, India <Badge  variant="success">OPEN</Badge>
 	                        </p>
 	                        <p className="text-white mb-0"><Icofont icon="food-cart" /> North Indian, Chinese, Fast Food, South Indian
 	                        </p>

@@ -274,7 +274,7 @@ class Checkout extends React.Component {
                         <div className="d-flex flex-column">
                            <h6 className="mb-1 text-white">Spice Hut Indian Restaurant
                            </h6>
-                           <p className="mb-0 text-white"><Icofont icon="location-pin" /> 2036 2ND AVE, NEW YORK, NY 10029</p>
+                           <p className="mb-0 text-white"><Icofont icon="location-pin" />5/15, Block-20, Anna Nagar, Chennai, Tamil Nadu, 600004, India</p>
                         </div>
                      </div>
                      <div className="bg-white rounded shadow-sm mb-2">

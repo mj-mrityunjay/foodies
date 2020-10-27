@@ -9,7 +9,7 @@ class TrackOrder extends React.Component {
 	render() {
     	return (
     		<section className="section bg-white osahan-track-order-page position-relative">
-	         <iframe title="Address" className="position-absolute" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13696.650704896498!2d75.82434255!3d30.8821099!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1555184720550!5m2!1sen!2sin" width="100%" height="676" frameBorder="0" style={{border:0}} allowFullScreen=""></iframe>
+	         <iframe title="Address" className="position-absolute" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.350541796823!2d80.20113261413437!3d12.885166620256934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525bee111f5207%3A0x734e6e3a3318f41e!2s28%2C%20Bollineni%20Hillside%20Rd%2C%20Nookampalayam%2C%20Arasankalani%2C%20Sithalapakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600126!5e0!3m2!1sen!2sin!4v1603810157085!5m2!1sen!2sin" width="100%" height="676" frameBorder="0" style={{border:0}} allowFullScreen=""></iframe>
 	         <Container className="pt-5 pb-5">
 	            <Row className="d-flex align-items-center">
 	               <Col md={6} className="text-center pb-4">
@@ -33,12 +33,12 @@ class TrackOrder extends React.Component {
 	                              <h6 className="mb-1 mt-1"><Link to="/detail" className="text-black"><Icofont icon="food-cart"/> Spice Hut Restaurant
 	                                 </Link>
 	                              </h6>
-	                              <p className="text-gray mb-5">2036, NEW YORK</p>
+	                              <p className="text-gray mb-5">5/15, Block-20, Anna Nagar, Chennai, Tamil Nadu, 600004, India</p>
 	                              <small>DELIVER TO</small>
 	                              <h6 className="mb-1 mt-1"><span className="text-black"><Icofont icon="map-pins"/> Other
 	                                 </span>
 	                              </h6>
-	                              <p className="text-gray mb-0">291, Jawaddi Kalan, Ludhiana, Punjab 141002, India
+	                              <p className="text-gray mb-0">101/208, BHS, Nookampalayam, Sithalapakkam, Chennai, Tamil Nadu 600131, India
 	                              </p>
 	                           </Col>
 	                           <Col md={7}>

@@ -93,10 +93,17 @@ class Checkout extends React.Component {
 	                           <Col md={6}>
 				               	  <ChooseAddressCard 
 				               	  	  boxclassName="border border-success"
+									  title= 'Home'
+									  icoIcon= 'briefcase'
+									  iconclassName= 'icofont-3x'
+									  address= '101/208, BHS, Nookampalayam, Sithalapakkam, Chennai, Tamil Nadu 600131, India' />
+	                           </Col>
+	                           <Col md={6}>
+				               	  <ChooseAddressCard 
 									  title= 'Work'
 									  icoIcon= 'briefcase'
 									  iconclassName= 'icofont-3x'
-									  address= 'NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India'
+									  address= 'NCC, Model Town Rd, Pritham Nagar, Model Town, Chennai, Tamil Nadu 600001, India'
 				               	  />
 	                           </Col>
 	                           <Col md={6}>
@@ -104,24 +111,16 @@ class Checkout extends React.Component {
 									  title= 'Work'
 									  icoIcon= 'briefcase'
 									  iconclassName= 'icofont-3x'
-									  address= 'NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India'
+									  address= 'NCC, Model Town Rd, VOC Nagar, Chennai, Tamilnadu 600002, India'
 				               	  />
 	                           </Col>
 	                           <Col md={6}>
 				               	  <ChooseAddressCard 
-									  title= 'Work'
-									  icoIcon= 'briefcase'
-									  iconclassName= 'icofont-3x'
-									  address= 'NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India'
-				               	  />
-	                           </Col>
-	                           <Col md={6}>
-				               	  <ChooseAddressCard 
-									  title= 'Work'
+									  title= 'Home'
 									  icoIcon= 'briefcase'
 									  iconclassName= 'icofont-3x'
 									  type="newAddress"
-									  address= 'NCC, Model Town Rd, Pritm Nagar, Model Town, Ludhiana, Punjab 141002, India'
+									  address= '101/208, BHS, Nookampalayam, Sithalapakkam, Chennai, Tamil Nadu 600131, India'
 									  onAddNewClick={() => this.setState({ showAddressModal: true })}
 				               	  />
 	                           </Col>
@@ -325,7 +324,7 @@ class Checkout extends React.Component {
                         <div className="d-flex flex-column">
                            <h6 className="mb-1 text-white">Spice Hut Indian Restaurant
                            </h6>
-                           <p className="mb-0 text-white"><Icofont icon="location-pin" /> 2036 2ND AVE, NEW YORK, NY 10029</p>
+                           <p className="mb-0 text-white"><Icofont icon="location-pin" /> 5/15, Block-20, Anna Nagar, Chennai, Tamil Nadu, 600004, India</p>
                         </div>
                      </div>
                      <div className="bg-white rounded shadow-sm mb-2">

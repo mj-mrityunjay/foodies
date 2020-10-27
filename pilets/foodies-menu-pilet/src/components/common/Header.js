@@ -10,7 +10,7 @@ import {getDataItem} from '../../index';
 let customCartDropDownItems = [];
 let cartCount = 0;
 let subtotal = 0;
-let checkoutitemTemp = [{"itemName":"Chicken Tikka Sub","price":314,"priceUnit":"$","id":1,"quantity":5,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Cheese corn Roll","price":260,"priceUnit":"$","id":2,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Mixed Veg","price":122,"priceUnit":"$","id":3,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Black Dal Makhani","price":652,"priceUnit":"$","id":4,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662}];
+let checkoutitemTemp = [{"itemName":"Chicken Tikka Sub","price":314,"priceUnit":"$","id":1,"quantity":2,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Cheese corn Roll","price":260,"priceUnit":"$","id":2,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Mixed Veg","price":122,"priceUnit":"$","id":3,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662},{"itemName":"Black Dal Makhani","price":652,"priceUnit":"$","id":4,"quantity":1,"show":true,"minValue":0,"maxValue":7,"total":1662}];
 export function getCustomCartDropDownItem() {
 	customCartDropDownItems = [];
 	cartCount = 0;
@@ -149,7 +149,7 @@ class Header extends React.Component {
 			               	  	<CartDropdownHeader 
 			               	  		className="dropdown-cart-top-header p-4" 
 			               	  		title="Spice Hut Indian Restaurant"
-			               	  		subTitle="2036 2ND AVE, NEW YORK, NY 10029"
+			               	  		subTitle="5/15, Block-20, Anna Nagar, Chennai, Tamil Nadu, 600004, India"
 			               	  		image="https://tireades.sirv.com/img/cart.jpg"
 			               	  		imageClass="img-fluid mr-3"
 			               	  		imageAlt="osahan"

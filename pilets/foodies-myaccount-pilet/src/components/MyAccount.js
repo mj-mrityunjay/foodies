@@ -31,7 +31,7 @@ class MyAccount extends React.Component {
                        <div className="border-bottom p-4">
                           <div className="osahan-user text-center">
                              <div className="osahan-user-media">
-                                <Image className="mb-3 rounded-pill shadow-sm mt-1" src="https://tireades.sirv.com/img/user/4.png" alt="Mrityunjay Kumar" />
+                                <Image className="mb-3 rounded-pill shadow-sm mt-1" src="https://tireades.sirv.com/img/user/MJ.png" alt="Mrityunjay Kumar" />
                                 <div className="osahan-user-media-body">
                                    <h6 className="mb-2">Mrityunjay Kumar</h6>
                                    <p className="mb-1">+91 99999-11111</p>
