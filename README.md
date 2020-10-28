@@ -9,7 +9,7 @@ This application is a steps towards building a microfrontend application using m
 ## Overview
 
 <p align="center">
-    <img  alt="Designing Micro Frontend with Piral" src="" class="img-responsive">
+    <img  alt="Designing Micro Frontend with Piral" src="https://tireades.sirv.com/img/piral/overview.d3a77986.png" class="img-responsive">
 </p>
 
 ## Demo
