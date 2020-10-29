@@ -25,5 +25,12 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 $breakpoint-mobile: 450px;
 $breakpoint-tablet: 650px;
 
-@import './foodies-app';
-@import './foodies';
+//@import './foodies_minified';
+//@import './App.css';
+//@import './foodies';
+//@import './foodies-app';
+@import './foodie-index.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'font-awesome/css/font-awesome.min.css';
+@import 'react-select2-wrapper/css/select2.css';
+@import './foodie-app.css';

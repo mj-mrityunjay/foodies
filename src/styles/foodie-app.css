@@ -1,10 +1,4 @@
 /*
-Template Name: foodie - Online Food Ordering Website HTML Template
-Author: Askbootstrap
-Author URI: https://themeforest.net/user/askbootstrap
-Version: 1.0
-*/
-/*
 -- Body
 -- Nav
 -- login/Register
@@ -606,7 +600,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3008', end
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.83) 100%);
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.83) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.83) 100%);
-   // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#d4000000', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#d4000000', GradientType=0);
 }
 .homepage-great-deals-carousel .item img {
     border-radius: 2px;
@@ -623,7 +617,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3008', end
     background: -moz-linear-gradient(-45deg, #ff3371 1%, #fe6753 100%);
     background: -webkit-linear-gradient(-45deg, #ff3371 1%, #fe6753 100%);
     background: linear-gradient(135deg, #ff3371 1%, #fe6753 100%);
-    //filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff3371', endColorstr='#fe6753', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff3371', endColorstr='#fe6753', GradientType=1);
 }
 .border-btn {
     border: 1px solid #dee0e6;
@@ -1495,5 +1489,3 @@ p{
 /* Extra large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) {
 }
-
-
