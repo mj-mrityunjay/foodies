@@ -29,6 +29,7 @@
     "url": "https://github.com/mrityunjayk/foodies/issues"
   },
   "dependencies": {
+    "@icon/icofont": "^1.0.1-alpha.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.3.1",
     "flexsearch": "^0.6.32",
@@ -41,6 +42,7 @@
     "piral-search": "0.12.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-icofont": "^1.0.19",
     "react-select2-wrapper": "^1.0.4-beta6",
     "reactstrap": "^8.0.1"
   },
