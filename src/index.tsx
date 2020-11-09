@@ -36,7 +36,7 @@ const instance =renderInstance({
 
 const app = (
   <Piral instance={instance}>
-    <SetRoute path="/" component={() => <Redirect to="/login" />} />
+    <SetRoute path="/" component={() => <Redirect to="/Index" />} />
   </Piral>
 );
 
