@@ -9,7 +9,7 @@ This application is a steps towards building a microfrontend application using m
 ## Overview
 
 <p align="center">
-    <img  alt="Designing Micro Frontend with Piral" src="https://tireades.sirv.com/img/piral/overview.d3a77986.png" class="img-responsive">
+    <img  alt="Designing Micro Frontend with Piral" src="https://tireades.sirv.com/img/MJ/foodie-app.PNG" class="img-responsive">
 </p>
 
 ## Demo
@@ -88,6 +88,8 @@ To know more about the approach and usage, [check the blog](https://mks-mrityunj
 
 To know more about Piral and Pilet, [Check piral.io](https://docs.piral.io/)
 
-## License
+## Credits
+Piral (https://piral.io)
 
+## License
 MIT
