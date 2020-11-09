@@ -14,7 +14,7 @@ This application is a steps towards building a microfrontend application using m
 
 ## Demo
 
-Click here to see the demo [foodie - steps to MicroFrontend with Piral](https://mrityunjayk.github.io/foodies/)
+Click here to see the demo [foodie - steps to MicroFrontend with Piral](https://mrityunjaykfoodie.netlify.app/)
 
 ## Components
 Piral - Host App with basic services
@@ -84,7 +84,7 @@ To publish pilet app. After publish, application will be uploaded to given feeds
 ```
 
 ## Read More
-To know more about the approach and usage, [check the blog](https://medium.com/@mks.mrityunjay/a-walk-towards-microfrontend-using-piral-bd8c0361ad31).
+To know more about the approach and usage, [check the blog](https://mks-mrityunjay.medium.com/a-walk-towards-micro-frontend-using-piral-bd8c0361ad31).
 
 To know more about Piral and Pilet, [Check piral.io](https://docs.piral.io/)
 
