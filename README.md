@@ -14,7 +14,7 @@ This application is a steps towards building a microfrontend application using m
 
 ## Demo
 
-Click here to see the demo [foodie - steps to MicroFrontend with Piral](https://mrityunjaykfoodie.netlify.app/)
+Click here to see the demo [foodie - steps to MicroFrontend with Piral](https://mrityunjaykfoodie.netlify.app/) or Alternate Site [foodie - steps to MicroFrontend with Piral](https://prekshaindustries.in/)
 
 ## Components
 Piral - Host App with basic services
