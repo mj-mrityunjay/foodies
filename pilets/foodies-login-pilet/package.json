@@ -40,7 +40,8 @@
     "react-bootstrap": "^1.0.0-beta.9",
     "react-icofont": "0.0.6",
     "react-owl-carousel3": "^2.2.5",
-    "react-select2-wrapper": "^1.0.4-beta6"
+    "react-select2-wrapper": "^1.0.4-beta6",
+    "node-fetch": ">=2.6.1"
   },
   "peerDependencies": {
     "reactstrap": "*",
