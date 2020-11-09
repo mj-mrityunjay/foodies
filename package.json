@@ -44,7 +44,8 @@
     "react-dom": "^16.14.0",
     "react-icofont": "^1.0.19",
     "react-select2-wrapper": "^1.0.4-beta6",
-    "reactstrap": "^8.0.1"
+    "reactstrap": "^8.0.1",
+    "node-forge": ">=0.10.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.2",
