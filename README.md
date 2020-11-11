@@ -86,7 +86,7 @@ To publish pilet app. After publish, application will be uploaded to given feeds
 ## Read More
 To know more about the approach and usage, [check the blog](https://mks-mrityunjay.medium.com/a-walk-towards-micro-frontend-using-piral-bd8c0361ad31).
 
-To know more about Piral and Pilet, [Check piral.io](https://docs.piral.io/)
+To know more about Piral and Pilet ecosystem, [Check piral.io](https://docs.piral.io/)
 
 ## Credits
 Piral (https://piral.io)
