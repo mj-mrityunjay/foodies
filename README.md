@@ -1,4 +1,4 @@
-# [foodie - steps to MicroFrontend with Piral] (https://mrityunjaykfoodie.netlify.app/)
+# [foodie](https://mrityunjaykfoodie.netlify.app/) - steps to MicroFrontend with Piral
 
 Many modern backend system landscapes follow the architecture pattern of microservices, while the frontends are still mostly implemented as single applications, which integrate with the entire backend as a kind of monolithic solution.
 
