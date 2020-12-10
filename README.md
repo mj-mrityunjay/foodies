@@ -89,23 +89,23 @@ To know more about the approach and usage, [check the blog](https://mks-mrityunj
 To know more about Piral and Pilet ecosystem, [Check piral.io](https://docs.piral.io/)
 
 ## Credits
-[Piral] (https://piral.io)
+[Piral](https://piral.io)
 
-[Bootstrap] (http://getbootstrap.com/)
+[Bootstrap](http://getbootstrap.com/)
 
-[Select2] (https://select2.org/)
+[Select2](https://select2.org/)
 
-[jQuery] (http://jquery.com)
+[jQuery](http://jquery.com)
 
-[Owl_Carousel] (https://owlcarousel2.github.io/OwlCarousel2/)
+[Owl_Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
 
-[FontAwesome] (https://fontawesome.com/)
+[FontAwesome](https://fontawesome.com/)
 
-[Icofont] (https://icofont.com/)
+[Icofont](https://icofont.com/)
 
-[Unsplash] (https://unsplash.com/)
+[Unsplash](https://unsplash.com/)
 
-[askbootstrap] (iamosahan@gmail.com)
+[askbootstrap](iamosahan@gmail.com)
 
 
 ## License
