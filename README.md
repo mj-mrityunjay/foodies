@@ -90,6 +90,14 @@ To know more about Piral and Pilet ecosystem, [Check piral.io](https://docs.pira
 
 ## Credits
 Piral (https://piral.io)
+Bootstrap (http://getbootstrap.com/)
+Select2 (https://select2.org/)
+jQuery library (http://jquery.com)
+Owl Carousel (https://owlcarousel2.github.io/OwlCarousel2/)
+Font Awesome (https://fontawesome.com/)
+Icofont (https://icofont.com/)
+Unsplash (https://unsplash.com/)
+askbootstrap (iamosahan@gmail.com)
 
 ## License
 MIT
