@@ -7,8 +7,9 @@ import { Link, useHistory } from "react-router-dom";
 import { refreshTokenSetup } from './utils/refreshToken';
 import { Redirect } from 'react-router';
 
-const clientId = '809999336277-adj606g4cjepnq6bg3e9pemvl9m0vdus.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyA5vhnL_NNOWwGJrE0fAYWSb87uOaa8CsU';
+// Please set CLIENT_ID and API_KEY from your google account.
+const clientId = '809999....';
+const API_KEY = 'AIzaSyA....';
 
 
 function LoginHooks() {

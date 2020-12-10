@@ -5,8 +5,9 @@ import FontAwesome from '../common/FontAwesome';
 import { Link, useHistory,Redirect } from "react-router-dom";
 import {setSharedData} from '../../index';
 
-const CLIENT_ID = '809999336277-adj606g4cjepnq6bg3e9pemvl9m0vdus.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyA5vhnL_NNOWwGJrE0fAYWSb87uOaa8CsU';
+// Please set CLIENT_ID and API_KEY from your google account.
+const CLIENT_ID = '809999336277....';
+const API_KEY = 'AIzaS.....';
 
 class GoogleBtn extends Component {
    constructor(props) {
